@@ -1,0 +1,209 @@
+
+
+<ons-tabbar>
+    <ons-tabbar-item page="home.html" label="Billete" icon="fa-user" active="true"></ons-tabbar-item>
+  <ons-tabbar-item page="settings.html" label="Bonos" icon="fa-ticket"></ons-tabbar-item>
+</ons-tabbar>
+
+<ons-template id="home.html">
+  
+     <ons-page>
+<ons-gesture-detector ng-SwipeRight="ons.navigator.pushPage('vigo-cangas2.html')">
+
+<ons-tabbar position="top">
+<div class="tab-bar tab-bar--top tab-bar--top-border" style="position:fixed"> 
+  <label class="tab-bar__item tab-bar--top-border__item" ng-Click="ons.navigator.pushPage('index.html')">
+    <input type="radio" name="top-tab-bar-b">
+    <button class="tab-bar__button tab-bar--top-border__button"> 
+            <ons-icon 
+                  icon="fa-bars" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+
+  <label class="tab-bar__item tab-bar--top-border__item" ng-Click="ons.navigator.pushPage('vigo-cangas.html')">
+    <input type="radio" name="top-tab-bar-b">
+    <button class="tab-bar__button tab-bar--top-border__button">
+      <ons-icon 
+                  icon="ion-navigate" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+  
+  <label class="tab-bar__item tab-bar--top-border__item" ng-Click="ons.navigator.pushPage('vigo-cangas2.html')">
+    <input type="radio" name="top-tab-bar-b">
+    <button class="tab-bar__button tab-bar--top-border__button">
+      <ons-icon 
+                  icon="fa-reply" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+
+  <label class="tab-bar__item tab-bar--top-border__item">
+    <input type="radio" name="top-tab-bar-b" checked="checked">
+    <button class="tab-bar__button tab-bar--top-border__button">
+      <ons-icon 
+                  icon="ion-bag" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+</div>
+</ons-tabbar>
+
+ 
+ 
+<div class="navigation-bar">
+  <div class="navigation-bar__center">
+    <div class="button-bar" style="width:200px;margin:7px 50px;">
+      <div class="button-bar__item">
+        <input type="radio" name="navi-segment-a" checked>
+        <div class="button-bar__button">One</div>
+      </div>
+
+      <div class="button-bar__item">
+        <input type="radio" name="navi-segment-a">
+        <div class="button-bar__button">Two</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+     
+
+  
+
+
+      
+      <ons-list>
+           <ons-list-header style="text-align: center; margin-top: 6px">El ticket se compra en la estación.</ons-list-header>
+
+         <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Billete Ida adulto:</strong> 2,30 €</ons-list-item>
+        <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Viaje Tarjeta Metrop.:</strong> 1,30 €</ons-list-item>
+        <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Niños (0-2 años):</strong> Gratis</ons-list-item>
+        <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Paquete sin pasajero:</strong> 1,40 €</ons-list-item>
+        <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Bici:</strong> 1,40 €</ons-list-item>
+        <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Perro:</strong> Gratis</ons-list-item>
+
+
+
+    </ons-list>
+
+
+
+</ons-template>
+
+<ons-template id="comments.html">
+  <ons-toolbar>
+    <div class="center">Comments</div>
+  </ons-toolbar>
+  
+  <p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+</ons-template>
+
+<ons-template id="tags.html">
+  <ons-toolbar>
+    <div class="center">Tags</div>
+  </ons-toolbar>
+  
+  <p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+</ons-template>
+
+<ons-template id="feed.html">
+  <ons-toolbar>
+    <div class="center">Feed</div>
+  </ons-toolbar>
+  
+  <p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+</ons-template>
+
+<ons-template id="settings.html">
+    <ons-page>
+<ons-gesture-detector ng-SwipeRight="ons.navigator.pushPage('vigo-cangas2.html')">
+
+<ons-tabbar position="top">
+<div class="tab-bar tab-bar--top tab-bar--top-border" style="position:fixed"> 
+  <label class="tab-bar__item tab-bar--top-border__item" ng-Click="ons.navigator.pushPage('index.html')">
+    <input type="radio" name="top-tab-bar-b">
+    <button class="tab-bar__button tab-bar--top-border__button"> 
+            <ons-icon 
+                  icon="fa-bars" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+
+  <label class="tab-bar__item tab-bar--top-border__item" ng-Click="ons.navigator.pushPage('vigo-cangas.html')">
+    <input type="radio" name="top-tab-bar-b">
+    <button class="tab-bar__button tab-bar--top-border__button">
+      <ons-icon 
+                  icon="ion-navigate" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+  
+  <label class="tab-bar__item tab-bar--top-border__item" ng-Click="ons.navigator.pushPage('vigo-cangas2.html')">
+    <input type="radio" name="top-tab-bar-b">
+    <button class="tab-bar__button tab-bar--top-border__button">
+      <ons-icon 
+                  icon="fa-reply" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+
+  <label class="tab-bar__item tab-bar--top-border__item">
+    <input type="radio" name="top-tab-bar-b" checked="checked">
+    <button class="tab-bar__button tab-bar--top-border__button">
+      <ons-icon 
+                  icon="ion-bag" 
+                  >
+              </ons-icon>
+    </button>
+  </label>
+</div>
+</ons-tabbar>
+
+ 
+ 
+<div class="navigation-bar">
+  <div class="navigation-bar__center">
+    <div class="button-bar" style="width:200px;margin:7px 50px;">
+      <div class="button-bar__item">
+        <input type="radio" name="navi-segment-a" checked>
+        <div class="button-bar__button">One</div>
+      </div>
+
+      <div class="button-bar__item">
+        <input type="radio" name="navi-segment-a">
+        <div class="button-bar__button">Two</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+     
+
+  
+
+
+      
+      <ons-list>
+               <ons-list-header style="font-size: 17px; text-align: center; margin-top: 5px">Los bonos ya no existen, en su lugar dispone de la tarjeta metropolitana</ons-list-header>
+
+        <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Tarjeta Metropolitana:</strong> 1,30 €</ons-list-item>
+        <ons-list-item class="topcoat-list__item__line-height" style="padding-left: 15px"><strong>Bonificada desde:</strong>              <a href="http://tmg.cmati.xunta.es/tarxeta-metropolitana-introducion">40 viajes/mes</a>  </ons-list-item>
+
+</ons-list>  
+      
+      
+</ons-template>
+

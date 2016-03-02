@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+        <script src="components/angular-translate.min.js"></script> 
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script> 
+        ons.bootstrap();
+        ons.disableAutoStatusBarFill();  // (Monaca enables StatusBar plugin by default)
+    </script>
+<script src="phonegap.js"></script>
+</head>
+<body>
+<ons-navigator var ="myNavigator" page="slidingMenu.html"></ons-navigator>
+
+<ons-template id="slidingMenu.html">
+<ons-sliding-menu
+                  above-page="page1.html"
+                  behind-page="menu.html"       
+                  side="left"
+                  max-slide-distance="250px"
+                  var="menu">
+</ons-sliding-menu>
+</ons-template>
+
+<ons-template id="page1.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em;"></ons-icon></ons-toolbar-button>
+      </div>
+      <div class="center" title="example">Escoge destino</div>
+    </ons-toolbar>
+  
+<ons-list>
+
+        <ons-list-item modifier="chevron" class="list-item-container" onClick="menu.closeMenu();myNavigator.pushPage('moana-vigo.html')">
+          <div class="list-item-left">
+            <img src="images/moana.jpg" class="avator">
+          </div>
+          <div class="list-item-right">
+            <div class="list-item-content">
+              Moaña-Vigo
+            </div>
+                      <div class="list-item-rig"><span class="desc"><span class="lucent">06:00 AM*<br>10:00 PM</span></div>
+
+          </div>
+          
+        </ons-list-item>
+
+
+
+ <ons-list-item modifier="chevron" class="list-item-container" onClick="menu.closeMenu();myNavigator.pushPage('vigo-moana.html')">
+          <div class="list-item-left">
+            <img src="images/vigo.jpg" class="avator">
+          </div>
+          <div class="list-item-right">
+            <div class="list-item-content">
+              Vigo-Moaña
+            </div>
+                      <div class="list-item-rig"><span class="desc"><span class="lucent">06:30 AM*<br>10:30 PM</span></div>
+
+          </div>
+          
+        </ons-list-item>
+    
+       
+ <ons-list-item modifier="chevron" class="list-item-container" onClick="menu.closeMenu();myNavigator.pushPage('cangas-vigo.html')">
+          <div class="list-item-left">
+            <img src="images/cangas.jpg" class="avator">
+          </div>
+          <div class="list-item-right">
+            <div class="list-item-content">
+              Cangas-Vigo
+            </div>
+                      <div class="list-item-rig"><span class="desc"><span class="lucent">07:00 AM*<br>10:00 PM</span></div>
+
+          </div>
+          
+        </ons-list-item>
+    
+     <ons-list-item modifier="chevron" class="list-item-container" onClick="menu.closeMenu();myNavigator.pushPage('vigo-cangas.html')">
+          <div class="list-item-left">
+            <img src="images/vigo.jpg" class="avator">
+          </div> 
+          <div class="list-item-right">
+            <div class="list-item-content">
+              Vigo-Cangas
+            </div>
+                      <div class="list-item-rig"><span class="desc"><span class="lucent">07:20 AM*<br>10:30 PM</span></div>
+
+          </div>
+          
+        </ons-list-item>
+        
+
+     
+ <ons-list-item>     
+<div align="center">
+<br>
+
+              
+ 
+            <a href="#" onClick="window.open('http://www.piratasdenabia.com/islas-cies/horarios-y-tarifas','_blank','location=yes');return false;"><but class="but"><ons-icon 
+                  icon="globe" 
+                  style="color: #FFFFFF">
+              </ons-icon> Islas Cies</but></a> 
+            <a href="#" onClick="window.open('http://www.piratasdenabia.com/isla-de-ons/horarios-y-tarifas','_blank','location=yes');return false;"><ons-button><ons-icon 
+                  icon="globe" style="color: #FFFFFF">
+              </ons-icon> Islas Ons&nbsp;&nbsp;</ons-button></a>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>      </ons-list-item>    
+
+        
+
+
+        </ons-page>
+</ons-template>
+
+ 
+
+<ons-template id="menu.html">
+<br><br>
+  <ons-list>
+          <ons-list-header style="text-align: center">Idioma</ons-list-header>
+
+        <ons-list-item>
+          <span style="color: #666">Español</span>
+          <ons-switch modifier="list-item" checked></ons-switch>
+        </ons-list-item>
+        <ons-list-item>
+    <div>
+<a href="mailto:contact@victorfernandez.me" class="button button--large--quiet">¿Nuevos horarios?</a>     
+
+    </div>
+</ons-list-item>
+ 
+      </ons-list>
+      <br>
+              <ons-list-header style="text-align: center">Agradecimiento</ons-list-header>
+
+<ons-list-item>
+    <div>
+    <img src="images/nabias.png" align="middle">
+    </div>
+</ons-list-item>
+
+
+
+
+      </ons-list>
+
+<section style="padding-left: 10px">
+<br>
+<span style="color: #3498DB">App creada por: </span><br><span style="color: #6E6E6E">Víctor Fernandez</span>
+<br>
+ <ul style="text-align: left; list-style: none; padding: 10px;">
+            <li>
+              <ons-icon 
+                  size="lg" 
+                  icon="globe" 
+                  style="color: #A4A4A4">
+              </ons-icon>
+              <a href="http://victorfernandez.me/">victorfernandez.me</a>            
+
+              </li>
+              </ons-icon>
+
+
+ </section>
+
+</ons-template>
+
+</body>
+</html>

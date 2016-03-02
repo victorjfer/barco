@@ -1,0 +1,338 @@
+
+
+<ons-tabbar position="top">
+   
+     <ons-tabbar-item ng-click="ons.navigator.pushPage('index.html')" icon="ion-navicon"></ons-tabbar-item>
+<ons-tabbar-item page="home.html" icon="ion-arrow-right-c" active="true"></ons-tabbar-item>
+  <ons-tabbar-item page="tags.html" icon="ion-arrow-return-left"></ons-tabbar-item>
+  <ons-tabbar-item page="settings.html" icon="ion-card"></ons-tabbar-item>
+</ons-tabbar>
+
+<ons-template id="home.html">
+<ons-gesture-detector ng-swiperight="ons.navigator.pushPage('index.html')" ng-swipeleft="myNavigator.setActiveTab('tags.html')">
+  
+
+
+      
+      <ons-list>
+        <ons-list-header style="text-align: center">Desde Moaña el barco sale a las horas</ons-list-header>
+        <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span><strong>Lunes/Viernes</strong></span></ons-col>
+       <ons-col><span><strong>Sábados</strong></span></ons-col>
+</ons-row></ons-list-item>
+
+<ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>06:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>07:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>08:00 h.</span></ons-col>
+       <ons-col><span>08:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>09:00 h.</span></ons-col>
+       <ons-col><span>09:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>10:00 h.</span></ons-col>
+       <ons-col><span>10:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>11:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>12:00 h.</span></ons-col>
+       <ons-col><span>12:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>13:00 h.</span></ons-col>
+       <ons-col><span>13:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>14:00 h.</span></ons-col>
+       <ons-col><span>14:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>15:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>16:00 h.</span></ons-col>
+       <ons-col><span>16:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>17:00 h.</span></ons-col>
+       <ons-col><span>17:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>18:00 h.</span></ons-col>
+       <ons-col><span>18:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>19:00 h.</span></ons-col>
+       <ons-col><span>19:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>20:00 h.</span></ons-col>
+       <ons-col><span>20:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>21:00 h.</span></ons-col>
+       <ons-col><span>21:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>22:00 h.</span></ons-col>
+       <ons-col><span>22:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+
+</ons-gesture-detector>
+</ons-template>
+
+<ons-template id="comments.html">
+<ons-gesture-detector ng-swiperight="ons.navigator.pushPage('index.html')" ng-swipeleft="ons.navigator.pushPage('moana-vigo2.html')">
+  
+
+
+      
+      <ons-list>
+        <ons-list-header style="text-align: center">Desde Moaña el barco sale a las horas</ons-list-header>
+        <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span><strong>Lunes/Viernes</strong></span></ons-col>
+       <ons-col><span><strong>Sábados</strong></span></ons-col>
+</ons-row></ons-list-item>
+
+<ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>06:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>07:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>08:00 h.</span></ons-col>
+       <ons-col><span>08:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>09:00 h.</span></ons-col>
+       <ons-col><span>09:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>10:00 h.</span></ons-col>
+       <ons-col><span>10:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>11:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>12:00 h.</span></ons-col>
+       <ons-col><span>12:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>13:00 h.</span></ons-col>
+       <ons-col><span>13:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>14:00 h.</span></ons-col>
+       <ons-col><span>14:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>15:00 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>16:00 h.</span></ons-col>
+       <ons-col><span>16:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>17:00 h.</span></ons-col>
+       <ons-col><span>17:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>18:00 h.</span></ons-col>
+       <ons-col><span>18:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>19:00 h.</span></ons-col>
+       <ons-col><span>19:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>20:00 h.</span></ons-col>
+       <ons-col><span>20:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>21:00 h.</span></ons-col>
+       <ons-col><span>21:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>22:00 h.</span></ons-col>
+       <ons-col><span>22:00 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+
+</ons-gesture-detector>
+</ons-template>
+
+<ons-template id="tags.html">
+<ons-gesture-detector ng-swiperight="ons.navigator.pushPage('moana-vigo.html')">
+  
+
+
+      
+      <ons-list>
+        <ons-list-header style="text-align: center">Desde Vigo el barco sale a las medias horas</ons-list-header>
+        <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span><strong>Lunes/Viernes</strong></span></ons-col>
+       <ons-col><span><strong>Sábados</strong></span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>06:30 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>07:30 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>08:30 h.</span></ons-col>
+       <ons-col><span>08:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>09:30 h.</span></ons-col>
+       <ons-col><span>09:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>10:30 h.</span></ons-col>
+       <ons-col><span>10:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>11:30 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>12:30 h.</span></ons-col>
+       <ons-col><span>12:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>13:30 h.</span></ons-col>
+       <ons-col><span>13:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>14:30 h.</span></ons-col>
+       <ons-col><span>14:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>15:30 h.</span></ons-col>
+       <ons-col><span>-----</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>16:30 h.</span></ons-col>
+       <ons-col><span>16:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>17:30 h.</span></ons-col>
+       <ons-col><span>17:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>18:30 h.</span></ons-col>
+       <ons-col><span>18:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>19:30 h.</span></ons-col>
+       <ons-col><span>19:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>20:30 h.</span></ons-col>
+       <ons-col><span>20:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>21:30 h.</span></ons-col>
+       <ons-col><span>21:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+    <ons-list-item style="text-align: center"><ons-row align="center">      
+       <ons-col><span>22:30 h.</span></ons-col>
+       <ons-col><span>22:30 h.</span></ons-col>
+</ons-row></ons-list-item>
+
+
+
+
+
+</ons-gesture-detector>
+</ons-template>
+
+<ons-template id="feed.html">
+  <ons-toolbar>
+    <div class="center">Feed</div>
+  </ons-toolbar>
+  
+  <p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+</ons-template>
+
+<ons-template id="settings.html">
+  <ons-toolbar>
+    <div class="center">Settings</div>
+  </ons-toolbar>
+  
+  <p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+</ons-template>
+

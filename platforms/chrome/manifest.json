@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Barco a Vigo. Horarios barcos pasajeros ría de Vigo",
+    "description": "Description of the app",
+    "version": "0.1.0",
+    "app": {
+        "background": {
+            "scripts": [
+                "background.js"
+            ]
+        }
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "clipboardWrite",
+        "clipboardRead",
+        "unlimitedStorage"
+    ],
+    "short_name": "Barco a Vigo",
+    "offline_enabled": true,
+    "optional_permissions": [
+
+    ],
+    "externally_connectable": {
+        "ids": [
+
+        ],
+        "matches": [
+
+        ],
+        "accepts_tls_channel_id": false
+    }
+}

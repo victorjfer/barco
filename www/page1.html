@@ -1,0 +1,33 @@
+
+  <ons-navigator title="Navigator" var="myNavigator">
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">Escoge destino</div>
+      </ons-toolbar>
+      
+      
+  
+  
+
+      
+      
+      
+ 
+      <ons-list>
+        <ons-list-item modifier="chevron" onclick="menu.closeMenu();myNavigator.pushPage('page2.html')">
+          Moaña-Vigo
+        </ons-list-item>
+        <ons-list-item modifier="chevron" onclick="myNavigator.pushPage('moana-vigo.html', { animation : 'lift' } )">
+          Vigo-Moaña
+        </ons-list-item>
+        <ons-list-item modifier="chevron" onclick="myNavigator.pushPage('page2.html', { animation : 'fade' } )">
+          Cangas-Vigo
+        </ons-list-item>
+        <ons-list-item modifier="chevron" onclick="myNavigator.pushPage('page2.html', { animation : 'none' } )">
+          Vigo-Cangas
+        </ons-list-item>
+      </ons-list>
+    </ons-page>
+  </ons-navigator>
+
+

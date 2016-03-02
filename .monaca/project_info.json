@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca",
+        "org.apache.cordova.statusbar",
+        "org.apache.cordova.inappbrowser",
+        "org.apache.cordova.splashscreen"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "5",
+    "cordova_version": "4.1",
+    "title-ja": "",
+    "title-en": "Barco a Vigo app",
+    "description-ja": "",
+    "description-en": "http:\/\/barcoavigo.com\/ | http:\/\/victorfernandez.me\/",
+    "category": "User Template",
+    "platform": [],
+    "name": "generated-1456923991-56c3192d7e21930d46d4d62f",
+    "external_plugins": []
+}
